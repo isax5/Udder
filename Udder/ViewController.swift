@@ -22,6 +22,10 @@ class ViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         //
     }
+    
+    func didChangeValue<Value>(for keyPath: KeyPath<ViewController, Value>, withSetMutation mutation: NSKeyValueSetMutationKind, using set: Set<Value>) where Value : Hashable {
+        //
+    }
 
 }
 
